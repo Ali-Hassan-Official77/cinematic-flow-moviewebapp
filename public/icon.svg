@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Neonrift Film Reel Logo">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0d1420"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </radialGradient>
+
+    <!-- Gold gradients -->
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8ECC2"/>
+      <stop offset="35%" stop-color="#D9BC5E"/>
+      <stop offset="70%" stop-color="#A8821F"/>
+      <stop offset="100%" stop-color="#E5D084"/>
+    </linearGradient>
+
+    <linearGradient id="gold2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5D084"/>
+      <stop offset="50%" stop-color="#B8942E"/>
+      <stop offset="100%" stop-color="#8A6A18"/>
+    </linearGradient>
+
+    <linearGradient id="gold3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A6A18"/>
+      <stop offset="50%" stop-color="#D9BC5E"/>
+      <stop offset="100%" stop-color="#F8ECC2"/>
+    </linearGradient>
+
+    <!-- Blue gradients -->
+    <linearGradient id="blue1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E5A9E"/>
+      <stop offset="50%" stop-color="#0E3560"/>
+      <stop offset="100%" stop-color="#082543"/>
+    </linearGradient>
+
+    <linearGradient id="blue2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A6AAA"/>
+      <stop offset="100%" stop-color="#0E3560"/>
+    </linearGradient>
+
+    <radialGradient id="blueCenter" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#2A6AAA"/>
+      <stop offset="60%" stop-color="#134A80"/>
+      <stop offset="100%" stop-color="#082543"/>
+    </radialGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop shadow -->
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" rx="20" fill="url(#bgGrad)"/>
+
+  <!-- Main icon group - centered -->
+  <g transform="translate(100 100)">
+
+    <!-- Left decorative gold line -->
+    <line x1="-75" y1="-45" x2="-75" y2="45" stroke="url(#gold1)" stroke-width="0.9" stroke-linecap="round" opacity="0.85"/>
+    <line x1="-75" y1="-25" x2="-75" y2="25" stroke="#F8ECC2" stroke-width="0.4" stroke-linecap="round" opacity="0.5"/>
+
+    <g filter="url(#drop)">
+
+      <!-- ============ BLUE FILM STRIP (Top-right, curving) ============ -->
+      <path d="M 8,-52
+               C 32,-58 58,-58 72,-48
+               C 82,-42 86,-32 82,-22
+               C 78,-14 68,-10 55,-9
+               C 38,-8 18,-6 4,-2
+               C -2,0 -5,-3 -5,-9
+               C -5,-16 -1,-24 4,-32
+               C 6,-38 7,-46 8,-52 Z"
+            fill="url(#blue1)" stroke="#0A2A4A" stroke-width="0.4"/>
+
+      <!-- Blue highlight sheen -->
+      <path d="M 12,-49
+               C 34,-54 58,-54 70,-45
+               C 76,-40 78,-34 76,-28
+               C 73,-23 66,-20 55,-19"
+            fill="none" stroke="#3A8ACA" stroke-width="0.7" opacity="0.45" stroke-linecap="round"/>
+
+      <!-- Film holes top row -->
+      <g fill="#051525" opacity="0.85">
+        <rect x="20" y="-46" width="5" height="2.6" rx="0.6" transform="rotate(-8 22.5 -44.7)"/>
+        <rect x="34" y="-46" width="5" height="2.6" rx="0.6" transform="rotate(-6 36.5 -44.7)"/>
+        <rect x="48" y="-45" width="5" height="2.6" rx="0.6" transform="rotate(-4 50.5 -43.7)"/>
+        <rect x="62" y="-43" width="5" height="2.6" rx="0.6" transform="rotate(-2 64.5 -41.7)"/>
+        <rect x="74" y="-39" width="5" height="2.6" rx="0.6" transform="rotate(4 76.5 -37.7)"/>
+      </g>
+
+      <!-- Film holes bottom row -->
+      <g fill="#051525" opacity="0.85">
+        <rect x="16" y="-38" width="5" height="2.6" rx="0.6" transform="rotate(-4 18.5 -36.7)"/>
+        <rect x="30" y="-38" width="5" height="2.6" rx="0.6" transform="rotate(-2 32.5 -36.7)"/>
+        <rect x="44" y="-37" width="5" height="2.6" rx="0.6" transform="rotate(0 46.5 -35.7)"/>
+        <rect x="58" y="-35" width="5" height="2.6" rx="0.6" transform="rotate(2 60.5 -33.7)"/>
+        <rect x="70" y="-31" width="5" height="2.6" rx="0.6" transform="rotate(6 72.5 -29.7)"/>
+      </g>
+
+      <!-- ============ GOLD TOP CURL ============ -->
+      <path d="M -8,-52
+               C -2,-58 6,-62 16,-64
+               L 18,-58
+               C 10,-56 4,-53 -2,-49
+               Z"
+            fill="url(#gold1)"/>
+
+      <!-- ============ GOLD LEFT SPIRAL ARM ============ -->
+      <path d="M -70,42
+               C -72,20 -66,-2 -52,-18
+               C -40,-32 -24,-40 -8,-44
+               L -5,-36
+               C -18,-33 -32,-26 -42,-14
+               C -54,-1 -58,18 -56,36
+               C -54,52 -46,62 -34,68
+               L -40,76
+               C -56,70 -66,58 -70,42 Z"
+            fill="url(#gold1)"/>
+
+      <!-- Gold left arm dark edge -->
+      <path d="M -70,42
+               C -72,20 -66,-2 -52,-18
+               C -58,-8 -61,8 -60,24
+               C -59,40 -55,54 -48,62"
+            fill="none" stroke="url(#gold3)" stroke-width="0.6" opacity="0.7"/>
+
+      <!-- Film holes on gold left arm -->
+      <g fill="url(#gold3)" opacity="0.8">
+        <rect x="-62" y="10" width="4" height="2.4" rx="0.5" transform="rotate(-20 -60 11.2)"/>
+        <rect x="-62" y="22" width="4" height="2.4" rx="0.5" transform="rotate(-15 -60 23.2)"/>
+        <rect x="-58" y="34" width="4" height="2.4" rx="0.5" transform="rotate(-10 -56 35.2)"/>
+        <rect x="-52" y="44" width="4" height="2.4" rx="0.5" transform="rotate(-5 -50 45.2)"/>
+        <rect x="-44" y="52" width="4" height="2.4" rx="0.5" transform="rotate(5 -42 53.2)"/>
+      </g>
+
+      <!-- ============ GOLD BOTTOM-LEFT ARM ============ -->
+      <path d="M -34,68
+               C -22,74 -8,78 6,78
+               L 8,70
+               C -4,70 -16,67 -26,62
+               L -34,68 Z"
+            fill="url(#gold2)"/>
+
+      <!-- ============ GOLD BOTTOM-RIGHT ARM ============ -->
+      <path d="M 6,78
+               C 24,76 40,68 52,56
+               C 62,46 68,34 70,22
+               L 62,20
+               C 60,30 55,40 47,48
+               C 38,57 24,64 8,66
+               L 6,78 Z"
+            fill="url(#gold1)"/>
+
+      <!-- Film holes on gold bottom-right arm -->
+      <g fill="url(#gold3)" opacity="0.8">
+        <rect x="14" y="68" width="4" height="2.4" rx="0.5" transform="rotate(30 16 69.2)"/>
+        <rect x="28" y="63" width="4" height="2.4" rx="0.5" transform="rotate(40 30 64.2)"/>
+        <rect x="40" y="56" width="4" height="2.4" rx="0.5" transform="rotate(50 42 57.2)"/>
+        <rect x="50" y="47" width="4" height="2.4" rx="0.5" transform="rotate(60 52 48.2)"/>
+        <rect x="57" y="36" width="4" height="2.4" rx="0.5" transform="rotate(70 59 37.2)"/>
+      </g>
+
+      <!-- ============ GOLD RIGHT SPIRAL INNER ARM ============ -->
+      <path d="M 55,-9
+               C 62,2 66,18 62,34
+               C 58,48 48,60 36,66
+               L 30,58
+               C 40,54 48,45 52,34
+               C 55,22 54,10 50,0
+               Z"
+            fill="url(#gold2)"/>
+
+      <!-- ============ CENTER BLUE SPIRAL DISC ============ -->
+      <circle cx="0" cy="14" r="34" fill="url(#blueCenter)" stroke="#0A2A4A" stroke-width="0.5"/>
+      <circle cx="0" cy="14" r="34" fill="none" stroke="#3A8ACA" stroke-width="0.4" opacity="0.4"/>
+
+      <!-- Spiral blades (rotating pinwheel effect) -->
+      <g opacity="0.95">
+        <!-- Blade 1: top -->
+        <path d="M 0,-20 C 8,-18 14,-10 16,0 L 6,4 C 5,-4 2,-11 -4,-15 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+
+        <!-- Blade 2: top-right -->
+        <path d="M 24,-6 C 30,0 32,10 28,20 L 19,15 C 22,8 21,1 17,-4 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+
+        <!-- Blade 3: right-bottom -->
+        <path d="M 26,28 C 20,35 10,40 0,40 L 2,30 C 10,30 18,26 22,20 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+
+        <!-- Blade 4: bottom -->
+        <path d="M -4,46 C -12,44 -20,36 -24,26 L -14,22 C -12,30 -6,37 2,39 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+
+        <!-- Blade 5: bottom-left -->
+        <path d="M -30,20 C -32,10 -30,-2 -22,-12 L -15,-6 C -20,0 -22,10 -21,18 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+
+        <!-- Blade 6: top-left -->
+        <path d="M -20,-22 C -12,-27 0,-28 8,-25 L 4,-17 C -2,-19 -10,-18 -16,-14 Z"
+              fill="url(#blue2)" stroke="#051525" stroke-width="0.3"/>
+      </g>
+
+      <!-- Center lens (small blue circle) -->
+      <circle cx="0" cy="14" r="9" fill="#0E3560" stroke="#2A6AAA" stroke-width="0.5"/>
+      <circle cx="0" cy="14" r="5.5" fill="#134A80"/>
+      <circle cx="0" cy="14" r="3" fill="#1E5A9E"/>
+      <circle cx="-1.2" cy="12.8" r="1.2" fill="#5AA5E0" opacity="0.7"/>
+
+      <!-- ============ GOLD TOP-RIGHT CURL ============ -->
+      <path d="M 72,-48
+               C 82,-52 90,-48 92,-40
+               C 94,-32 90,-24 82,-20
+               L 78,-26
+               C 83,-29 85,-34 84,-39
+               C 82,-44 78,-46 72,-44
+               Z"
+            fill="url(#gold1)"/>
+
+    </g>
+
+    <!-- Outer subtle glow ring -->
+    <circle cx="0" cy="14" r="88" fill="none"
+            stroke="url(#gold1)" stroke-width="0.35" opacity="0.2"/>
+
+  </g>
+</svg>
