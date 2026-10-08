@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <ToastHost />
+
+    <script src="https://cdn.zanderio.ai/widget/loader.js" data-id="wdg_l9GRUXvVx6FitfBrBcycLSKC" defer></script>
       </body>
     </html>
   );
